@@ -4,14 +4,14 @@
 import PackageDescription
 
 let package = Package(
-    name: "DarockKit",
+    name: "LinecomKit",
     platforms: [
         .iOS(.v15), .watchOS(.v9), .macOS(.v11), .tvOS(.v16)
     ],
     products: [
         .library(
-            name: "DarockKit",
-            targets: ["DarockKit"])
+            name: "LinecomKit",
+            targets: ["LinecomKit"])
     ],
     dependencies: [
         .package(url: "https://github.com/Alamofire/Alamofire", from: "5.8.1"),
@@ -19,7 +19,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "DarockKit",
+            name: "LinecomKit",
             dependencies: [
                 "Alamofire",
                 "SwiftyJSON"
