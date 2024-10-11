@@ -17,20 +17,20 @@ public extension String {
             return "\"\(self)\""
         }
     }
-    func urlEncoded() -> String {
+    func encodeURL() -> String {
         let encodeUrlString = self.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
         return encodeUrlString ?? ""
     }
-    func urlDecoded() -> String {
+    func decodeURL() -> String {
         return self.removingPercentEncoding ?? ""
     }
-    func base64Decoded() -> String? {
+    func decodeB64() -> String? {
         guard let data = Data(base64Encoded: self) else {
             return nil
         }
         return String(data: data, encoding: .utf8)
     }
-    func base64Encoded() -> String {
+    func encodeB64() -> String {
             return Data(self.utf8).base64EncodedString()
     }
     var md5: String {

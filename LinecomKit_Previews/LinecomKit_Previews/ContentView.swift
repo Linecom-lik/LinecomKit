@@ -1,13 +1,13 @@
 //
 //  ContentView.swift
-//  DarockKit_Previews
+//  LinecomKit_Previews
 //
-//  Created by WindowsMEMZ on 2023/8/22.
+//  Created by 程炜栋 on 2024/10/11.
 //
 
 import AlertKit
 import SwiftUI
-import DarockKit
+import LinecomKit
 
 struct ContentView: View {
     var body: some View {
